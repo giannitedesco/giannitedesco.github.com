@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+<h3>{{post.date | date:"%Y-%m-%d"}} - {{ post.title }}</h3>
+{{ post.summary}}
+<a href="{{ post.url }}">[ read more ]</a>
+<p>&nbsp;</p>
+{% endfor %}
