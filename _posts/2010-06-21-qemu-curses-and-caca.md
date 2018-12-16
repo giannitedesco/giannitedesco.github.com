@@ -7,6 +7,7 @@ year: 2010
 month: 6
 day: 21
 published: true
+comments: true
 summary: Fun with text-mode qemu consoles
 ---
 I have recently discovered, and been very impressed with, the qemu ncurses display driver. Basically it lets you run a guest OS inside of a regular terminal emulator. Currently the curses display works almost perfectly when the BIOS and guest OS has the VGA card programmed in text mode but when switched to graphics mode all you get is a message telling you “Graphic mode 800 x 600″ for example.
