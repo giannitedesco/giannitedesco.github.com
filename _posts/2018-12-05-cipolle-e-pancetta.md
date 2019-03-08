@@ -1,13 +1,9 @@
 ---
-layout: post
 title: Tagliatelle al sugo di cipolle e pancetta
-category: cooking
-tags: recipes pasta
-year: 2018
-month: 12
-day: 5
-published: true
+layout: post
 comments: true
+date:   2018-12-05 14:00:00 +9000
+tags: cooking recipes pasta
 summary: A lighter alternative to carbonara
 ---
 

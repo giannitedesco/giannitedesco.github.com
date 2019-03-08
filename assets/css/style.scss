@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header h1:before {
+  content: "$ ";
+  font-size: 24px;
+}
+header a {
+  color: $conifer;//$header;
+  text-decoration: none;
+}
