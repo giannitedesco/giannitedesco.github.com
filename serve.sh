@@ -1,2 +1,2 @@
 #!/bin/bash
-exec bundle exec jekyll serve  &> /dev/null 
+exec bundle exec jekyll serve --unpublished --future &> /dev/null
