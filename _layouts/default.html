@@ -37,8 +37,12 @@
 <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
-	    this.page.url = "{{ site.url }}";  // Replace PAGE_URL with your page's canonical URL variable
-	    this.page.identifier = "{{ page.slug }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	    this.page.url = "https://giannitedesco.github.io{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+	    {% if page.id == '/2019/06/15/abusing-add' %}
+		    this.page.identifier = "{{ page.slug }}";
+	    {% else %}
+		    this.page.identifier = "{{ page.id }}";
+	    {% endif %}
     };
     (function() {  // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
