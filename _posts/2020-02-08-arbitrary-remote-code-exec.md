@@ -121,7 +121,7 @@ https and gpg from the outset and would be difficult to get wrong.
 
 By LXC 3 the templates system had been removed to a historical repo and the
 _status quo_ is now that images are built securely and signed on trusted
-infrastructure and then signed to users over https and with a signature which
+infrastructure and then sent to users over https and with a signature which
 is checked by `lxc-download`.
 
 This is a fine example of the concerns which go in to building a software
