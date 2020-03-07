@@ -5,11 +5,10 @@ comments: true
 mathjax: true
 date: 2019-06-15 10:14:00 +0900
 tags: binary logic bitwise-hacks
-summary: Why Kernighan's trick works
+summary: Where we explain why Kernighan's trick works
 ---
 
 
-## Where we explain why Kernighan's trick works
 Have you ever been asked the interview question "how do you count the number of
 bits set in an integer?"
 

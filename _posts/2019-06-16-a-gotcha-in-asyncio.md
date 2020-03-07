@@ -5,9 +5,9 @@ comments: true
 mathjax: true
 date: 2019-06-16 10:14:00 +0900
 tags: python sockets asyncio
+summary: In which we discover a problem with python asyncio
 ---
 
-## A bit of a gotcha
 Let's say we have a datagram server written in python using the shiny new
 `asyncio` module:
 

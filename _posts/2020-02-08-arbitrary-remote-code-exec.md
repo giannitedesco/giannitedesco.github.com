@@ -5,9 +5,9 @@ comments: true
 mathjax: true
 date: 2020-02-08 10:14:00 +0900
 tags: security containers lxc snapcraft docker
+summary: Where we warn the youth about downloading malware and running it
 ---
 
-## Cattle, not Pets
 Long gone are the days when servers were like little pets. You logged in to
 them, you stroked them, you ran little commands on them. Probably some commands
 you copied and pasted out of stackoverflow or that you found in some google
@@ -22,6 +22,7 @@ identical to your dead pet anyway.
 That is, Unless you were trying to deliver consistent, performant, and
 uninterrupted service to colleagues, customers, or the like.
 
+## Cattle, not Pets
 In that case you'd want something a bit more repeatable. A bit more automated.
 A bit more like a production-line eviscerating pigs for the manufacture of
 sausage.

@@ -9,6 +9,7 @@ url: https://giannitedesco.github.io
 disqus:
 github_username:  giannitedesco
 google_analytics: UA-158175838-1
+show_excerpts: true
 
 # Build settings
 theme: jekyll-theme-hacker
