@@ -93,7 +93,7 @@ def mariy(pred, it):
     return reduce(lambda x, y: x[pred(y)].append(y) or x, it, ([], []))
 ```
 
-In princple, this is the same as the above but it takes advantage fo the fact
+In princple, this is the same as the above but it takes advantage of the fact
 that reduce performs some of the boilerplate for you.
 
 I expect it to be a bit less efficient since it creates as many result tuples
