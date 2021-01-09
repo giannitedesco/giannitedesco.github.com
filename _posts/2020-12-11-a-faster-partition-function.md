@@ -42,7 +42,7 @@ It's quite clever, so it's worth mentioning.
 ```python
 from itertools import tee, filterfalse
 
-def stdlib(pred, it):
+def partition(pred, it): # stdlib
     a, b = tee(it)
     return filterfalse(pred, a), filter(pred, b)
 ```
@@ -74,7 +74,7 @@ advantage of the fact that `True` and `False` cast to `1` and `0` when used to
 index a tuple.
 
 ```python
-def trevor(pred, it):
+def partition(pred, it): # trevor
     ret = ([], [])
     for item in it:
         ret[pred(item)].append(item)
@@ -89,7 +89,7 @@ Haskellers PhD thesis, proposed by stackoverflow member Mariy. This one uses
 `functools.reduce`, which is pythons version of `foldl`:
 
 ```python
-def mariy(pred, it):
+def partition(pred, it): # mariy
     return reduce(lambda x, y: x[pred(y)].append(y) or x, it, ([], []))
 ```
 
@@ -106,7 +106,7 @@ According to gboffi, it turns out the fastest solution that
 came up with is just the straight forward version, credited to Mark Byers:
 
 ```python
-def byers(pred, it):
+def partition(pred, it): # byers
     ts = []
     fs = []
     for item in it:
@@ -231,7 +231,7 @@ OK, that's interesting, but what if we just explicitly apply the above
 optimisation?
 
 ```python
-def scara(pred, it):
+def partition(pred, it): # scara
     ts = []
     fs = []
     t = ts.append
@@ -303,7 +303,7 @@ the branch. It led to a tiny improvement in performance. Here it is:
 
 
 ```python
-def scara2(pred, it):
+def partition(pred, it): # scara2
     ts = []
     fs = []
     t = ts.append
