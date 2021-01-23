@@ -1,5 +1,5 @@
 ---
-title: Anyone who has ever installed virtio-win by yum is vulnerable
+title: Anyone who has ever installed fedora virtio-win packages via yum is vulnerable
 layout: post
 comments: true
 mathjax: true
@@ -85,3 +85,9 @@ of telling people that arbitrary remote code execution is arbitrary remote code
 execution.
 
 You can refer to the virtio-win repo issue as `CVE-2020-29665`.
+
+# Edits
+Originally the title was sloppily written and it implied that all virtio-win
+packages available on any yum repo had this problem. In fact, the fedora repo
+is only once such repo. Apparently the RHEL repos do not suffer from this
+problem. Thanks Cole Robinson for pointing that out.
