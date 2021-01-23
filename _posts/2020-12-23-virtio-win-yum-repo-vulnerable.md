@@ -63,7 +63,7 @@ I also filed [a bug against
 dnf](https://bugzilla.redhat.com/show_bug.cgi?id=1878595) that it insecurely
 installs code from the internet without so much as a warning message.
 
-# DNF does not check TLS certs if you use https!
+# DNF does not check TLS certs if you use https! (not true)
 Initially I thought that a quick workaround would be to change the repo URL to
 https. After all, `fedoraproject.org` should be trustworthy.
 
@@ -79,6 +79,10 @@ Of course, there are good historical reasons not to use TLS, it breaks
 caching. But given todays threat landscape, mirror services may just want to
 suck up this cost.
 
+Update: provided that `sslverify=1`, which is the default, the yum TLS client
+will reject any connection that cannot be authenticated and downloads will
+fail.
+
 # Arbitrary remote code execution is arbitrary remote code execution
 Merry christmas, happy new year, it'll soon be 2021, and here's to another year
 of telling people that arbitrary remote code execution is arbitrary remote code
@@ -91,3 +95,5 @@ Originally the title was sloppily written and it implied that all virtio-win
 packages available on any yum repo had this problem. In fact, the fedora repo
 is only once such repo. Apparently the RHEL repos do not suffer from this
 problem. Thanks Cole Robinson for pointing that out.
+
+Thanks to Ken Dreyer and Daniel Mach for clearing up the points about DNF.
