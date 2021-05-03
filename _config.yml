@@ -8,7 +8,6 @@ url: https://giannitedesco.github.io
 #baseurl: "" # the subpath of your site, e.g. /blog
 disqus:
 github_username:  giannitedesco
-google_analytics: UA-158175838-1
 show_excerpts: true
 
 # Build settings
